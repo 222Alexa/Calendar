@@ -1,9 +1,9 @@
 export default class Storage {
-  getPinCards() {
-    return JSON.parse(localStorage.getItem("imageCards")) || [];
+  getTermins() {
+    return JSON.parse(localStorage.getItem("termins")) || [];
   }
 
   save(data) {
-    localStorage.setItem("imageCards", JSON.stringify(data));
+    localStorage.setItem("termins", JSON.stringify(data));
   }
 }

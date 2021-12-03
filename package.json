@@ -12,6 +12,8 @@
     "test": "jest",
     "coverage": "jest --coverage",
     "doc": "jsdoc -c jsdoc.conf.json",
+    "e2e": "jest --testPathPattern=./e2e/ --runInBand",
+    "ci": "start-test :8888 test",
     "preshow:coverage": "npm run coverage",
     "show:coverage": "live-server coverage/lcov-report",
     "preshow:doc": "npm run doc",
@@ -45,12 +47,15 @@
     "prettier": "^2.2.1",
     "terser-webpack-plugin": "^5.2.4",
     "url-loader": "^4.1.1",
-    "vanillajs-datepicker": "^1.1.4",
     "webpack": "^5.62.1",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "core-js": "^3.19.1"
+    "@babel/types": "^7.16.0",
+    "core-js": "^3.19.1",
+    "moment": "^2.29.1",
+    "puppeteer": "^12.0.1",
+    "vanillajs-datepicker": "^1.1.4"
   }
 }

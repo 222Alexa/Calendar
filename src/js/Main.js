@@ -1,12 +1,9 @@
 export default class Main {
   constructor(container) {
     this.container = container;
-   
   }
 
   createMain() {
-    this.main = document.createElement("div");
-    this.main.classList.add("main-wrapper");
     this.bindToDOM();
   }
 
@@ -14,6 +11,7 @@ export default class Main {
     return `
     <div id="picker-container">
     <h2 class="main__title">Увезу!</h2>
+    <button class="start__btn">Поехали!</button>
    
 	  </div>`;
   }
