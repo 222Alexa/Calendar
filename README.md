@@ -36,3 +36,7 @@
 Для расчёта дат воспользуйтесь библиотекой `moment js` (обязательное условие). Установите и подключите её через npm/yarn.
 
 Не забудьте написать авто-тесты, разделив логику и взаимодействие с DOM. Для тестирования взаимодействия с DOM пользуйтесь JSDOM или Puppeteer.
+
+---
+
+[![Build status](https://ci.appveyor.com/api/projects/status/7p26t5ibi6uqmwd1/branch/main?svg=true)](https://ci.appveyor.com/project/222Alexa44925/calendar/branch/main)
